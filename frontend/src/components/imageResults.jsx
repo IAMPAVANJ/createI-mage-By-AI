@@ -4,6 +4,7 @@ import Skeleton from "./skeleton";
 const ImageResult = ({listImages,isLoading})=>{
     const isgetting = isLoading;
     let Data = listImages.data;
+    console.log(Data)
 
     return(
         <div className="container-fluid" id="imageContainer">
