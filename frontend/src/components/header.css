@@ -1,0 +1,17 @@
+#headerBox{
+        /* fallback for old browsers */
+        background-color: #d5f1b4;
+        height: auto;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      }
+#searchBar{
+    display: flex;
+    flex-direction: row;
+}
+#logo{
+    color: rgb(4, 9, 78);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+}

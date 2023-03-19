@@ -1,8 +1,10 @@
 const express = require("express");
-const app = express();
 const cors = require('cors')
-const port  = 8080 || process.env.PORT;
 require('dotenv').config();
+const port  = 8080 || process.env.PORT;
+
+const app = express();
+
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
 app.use(cors())
