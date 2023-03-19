@@ -13,10 +13,11 @@ console.log(prompt)
     try{
     const  respose = await openai.createImage({
         prompt,
-        n:2,
+        n:5,
         size:"1024x1024"
     })
 const image_result = respose.data.data;
+
 res.status(200).json({
     success:true,
     data:image_result
