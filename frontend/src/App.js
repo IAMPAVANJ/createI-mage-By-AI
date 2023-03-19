@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Header from './components/headerBox';
+import "./App.css"
 import ImageResult from './components/imageResults';
 function App() {
   const [listImages,setListImages] = useState([]);
