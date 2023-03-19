@@ -1,5 +1,5 @@
 const {Configuration,OpenAi, OpenAIApi} = require('openai')
-let OPEN_API_KEY = "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"
+let OPEN_API_KEY = "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"
 const configuration = new Configuration({ 
     apiKey:OPEN_API_KEY
 })
@@ -13,17 +13,21 @@ console.log(prompt)
     try{
     const  respose = await openai.createImage({
         prompt,
-        n:5,
-        size:"1024x1024"
+        n:10,
+        size:"512x512"
     })
 const image_result = respose.data.data;
 
-res.status(200).json({
+    return res.status(200).json({
     success:true,
     data:image_result
 })
     }catch(err){
-        console.log(err)
+        return res.status(400).json({
+            "message":err.message,
+            "status":"failed"
+        })
+       
     }
 }
 module.exports = {generateImage}
