@@ -7,7 +7,6 @@ const Header = ({setListImages,setIsLoading})=>{
 
     const handleSubmit = async(e)=>{
         e.preventDefault();
-
         try{
             setIsLoading(true)
             await fetch("http://localhost:8080/search/images",{
@@ -24,12 +23,7 @@ const Header = ({setListImages,setIsLoading})=>{
             .catch(err=>console.log(err))
             .finally(()=>setIsLoading(false))
 
-           
-            
-            // let jsonData = data.json()
-            // console.log(jsonData)
-            
-            // setListImages(jsonData)
+
         }catch(err){
             console.log(err)
         }finally{

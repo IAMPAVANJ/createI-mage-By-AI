@@ -3,9 +3,9 @@ import Header from './components/headerBox';
 import ImageResult from './components/imageResults';
 function App() {
   const [listImages,setListImages] = useState([]);
-  const [isLoading, setIsLoading]  = useState(false);
+  const [isLoading, setIsLoading]  = useState(true);
 
-  console.log(listImages.data)
+  console.log(listImages)
   
   return (
     <div>
