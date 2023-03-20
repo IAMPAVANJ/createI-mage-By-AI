@@ -10,7 +10,7 @@ const ImageResult = ({listImages,isLoading})=>{
         Data=[]
         Swal.fire({
             title:"<h2>You're Using PAVAN.Ai</h2>",
-            html:"<p>कुछ और देख ले</p><b>Do Not search harmful or Adult Imagination</b>"
+            html:"<b>Do Not search harmful or Adult Imagination</b>"
         })
     }
    
