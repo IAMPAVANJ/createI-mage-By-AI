@@ -13,7 +13,7 @@ const Header = ({setListImages,setIsLoading})=>{
         toast.success("Search Started....")
         try{
             setIsLoading(true)
-            await fetch("http://localhost:8080/search/images",{
+            await fetch("https://ai-seach-image-backend.onrender.com/search/images",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
